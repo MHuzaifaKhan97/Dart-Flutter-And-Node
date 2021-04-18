@@ -1,0 +1,29 @@
+void main(){
+  
+  var list = [1,2,3,4,5,6,7];
+  for(int i=0;i<list.length;i++){
+    print(list[i]);
+  }
+  
+  var list2 = ['Huzaifa',"Waleed","Abubakar","Ibad"];
+  for(var key in list2){
+    print(key);
+  }
+  
+  var a = 1;
+  while(a < 5){
+    print(a);
+    a++;
+  }
+  
+  var b =0;
+  do{
+    print(b);
+  }while(b!=0);
+  
+  helloWorld();
+}
+
+void helloWorld(){
+  print("Hello World");
+}

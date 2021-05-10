@@ -1,0 +1,45 @@
+void main(){
+  
+    var sayhello = sayHello();
+    print('Print : $sayhello');
+
+    var addition = add(5,6);
+  print('Addition is: $addition');
+  
+    var mul = multiply(5,6);
+  print('Multiplication is: $mul');
+    
+  var cirr = Circle();
+cirr.calarea();
+cirr.cir();
+var sqr = Square();
+sqr.calarea();
+sqr.sq();
+}
+
+String sayHello(){
+  return "Hello World";
+}
+
+int add(int a , int b){
+  return a*b;
+}
+
+double multiply(double a, double b) => a*b;
+
+
+class Shape {
+void calarea() {
+print("calling calc area defined in the Shape class");
+}
+}
+class Circle extends Shape {
+void cir(){
+print("Circle Class");
+}
+}
+class Square extends Shape {
+void sq(){
+print("Square Class");
+}
+}

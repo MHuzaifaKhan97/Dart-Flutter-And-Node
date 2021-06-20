@@ -1,4 +1,4 @@
-import 'package:ecommerce_home/screens/homeScreen.dart';
+import 'package:ecommerce_home/screens/navigationScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,11 +9,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Ecommerce Home UI',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      home: NavigationScreen(),
     );
   }
 }

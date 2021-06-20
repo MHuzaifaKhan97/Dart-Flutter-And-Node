@@ -1,3 +1,4 @@
+import 'package:advanced_widgets/pages/bottom.dart';
 import 'package:advanced_widgets/pages/login.dart';
 import 'package:advanced_widgets/pages/register.dart';
 import 'package:flutter/material.dart';
@@ -163,6 +164,12 @@ class _HomeScreenState extends State<HomeScreen> {
     // );
 
     // BOTTOM NAVIGATION
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('BottomAppBar'),
+      ),
+      body: BottomNavigation(),
+    );
   }
 
   Widget something(String name, String age) {

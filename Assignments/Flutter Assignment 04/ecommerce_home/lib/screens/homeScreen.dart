@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
             Container(
-              height: MediaQuery.of(context).size.height * 0.55,
+              height: MediaQuery.of(context).size.height * 0.5,
               width: MediaQuery.of(context).size.width,
               // height: 300,
               // width: 400,
@@ -35,24 +35,17 @@ class HomeScreen extends StatelessWidget {
                     title: 'Note 12 Ultra',
                     noOfRating: 5,
                     reviews: 23,
-                    scale: 3.45,
                   ),
                   homeBannerItem(context,
                       img: 'assets/images/macbookair.jpg',
                       title: 'Macbook Air',
                       noOfRating: 5,
-                      scale: 2.6,
+                      // scale: 2.6,
                       reviews: 38),
-                  homeBannerItem(context,
-                      img: 'assets/images/iphone12.jpg',
-                      title: 'Iphone 12',
-                      scale: 3.8,
-                      noOfRating: 5,
-                      reviews: 28),
                   homeBannerItem(context,
                       img: 'assets/images/macbookpro.jpg',
                       title: 'Macbook Pro',
-                      scale: 5.8,
+                      // scale: 5.8,
                       noOfRating: 5,
                       reviews: 18),
                 ],
@@ -72,17 +65,20 @@ class HomeScreen extends StatelessWidget {
       double scale}) {
     return Container(
       margin: EdgeInsets.only(top: 8),
-      // width: MediaQuery.of(context).size.width,
+      width: MediaQuery.of(context).size.width * 0.95,
       child: Card(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
+              alignment: Alignment.centerLeft,
+              width: MediaQuery.of(context).size.width * 0.95,
               decoration:
                   BoxDecoration(borderRadius: BorderRadius.circular(50)),
               child: Image.asset(
                 img,
                 scale: scale,
+                alignment: Alignment.centerLeft,
               ),
             ),
             SizedBox(height: 8),

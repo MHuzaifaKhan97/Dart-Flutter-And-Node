@@ -28,7 +28,6 @@ class _NavigationScreenState extends State<NavigationScreen> {
       ),
       body: PageStorage(bucket: PageStorageBucket(), child: currentScreen),
       bottomNavigationBar: BottomAppBar(
-        // notchMargin: 50,
         color: Colors.white,
         child: Container(
           height: 60,
